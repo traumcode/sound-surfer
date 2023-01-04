@@ -1,14 +1,14 @@
-import { Dialog } from '@headlessui/react';
 import { lazy, Suspense, useState } from 'react';
 import { Outlet, RouteObject, useRoutes, BrowserRouter } from 'react-router-dom';
 import { LoadingSpinner } from '~/components/LoadingSpinner';
 import { NavBar } from '~/components/NavBar';
 
-const Loading = () => <LoadingSpinner/>
+const Loading = () => <LoadingSpinner />;
 
 const IndexScreen = lazy(() => import('~/screens/Index'));
 const Page404Screen = lazy(() => import('~/screens/404'));
 const SignUpScreen = lazy(() => import('~/screens/SignUp'));
+const ExploreScreen = lazy(() => import('~/screens/Explore'));
 
 function Layout() {
     return (
@@ -44,6 +44,10 @@ const InnerRouter = () => {
                 {
                     path: '*',
                     element: <Page404Screen />,
+                },
+                {
+                    path: 'explore',
+                    element: <ExploreScreen />,
                 },
             ],
         },

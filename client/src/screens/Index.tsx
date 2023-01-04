@@ -1,4 +1,3 @@
-import { Dialog } from '@headlessui/react';
 import { useRef, useState } from 'react';
 import { useAuthState } from '~/contexts/UserContext';
 import { SignInButton } from '~/auth/SignInButton';

@@ -1,29 +1,26 @@
 function Hero() {
     return (
         <>
-            <section className="text-gray-400 bg-gray-900 body-font">
+            <section className="body-font bg-base-300 rounded">
                 <div className="container mx-auto flex flex-col px-5 py-24 justify-center items-center">
                     <img
                         className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
                         alt="hero"
-                        src="https://dummyimage.com/720x600"
+                        src="https://i.ibb.co/VSQHLj8/8057-A510-FDDF-45-F6-A307-4-B45-A7-EBA7-AA.png"
                     />
                     <div className="w-full md:w-2/3 flex flex-col mb-16 items-center text-center">
-                        <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-                            Knausgaard typewriter readymade marfa
-                        </h1>
+                        <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Welcome Surfer,</h1>
                         <p className="mb-8 leading-relaxed">
-                            Welcome to Sound Surfer, the uttltimate music discovery app for music lovers. Imagine yourself
-                            surfing the endless waves of sound, finding the perfect song to match your mood and
-                            preferences. That's what Sound Surfer is all about. With our advanced recommendation
-                            algorithm, we help you discover new and exciting music that you'll love. Simply input your
-                            favorite artists and genres, and we'll do the rest, presenting you with a personalized
-                            selection of tracks that are sure to satisfy your musical cravings. But Sound Surfer is more
-                            than just a music recommendation app. It's a community of music enthusiasts, all sharing
-                            their love for new and exciting sounds. Connect with friends, follow your favorite artists,
-                            and join the conversation on our interactive platform. So grab your board and get ready to
-                            ride the waves of sound. Sign up for Sound Surfer now and discover a world of music waiting
-                            to be explored.
+                            to the ultimate music discovery app for music lovers. Imagine yourself surfing the endless
+                            waves of sound, finding the perfect song to match your mood and preferences. That's what
+                            Sound Surfer is all about. With our advanced recommendation algorithm, we help you discover
+                            new and exciting music that you'll love. Simply input your favorite artists and genres, and
+                            we'll do the rest, presenting you with a personalized selection of tracks that are sure to
+                            satisfy your musical cravings. But Sound Surfer is more than just a music recommendation
+                            app. It's a community of music enthusiasts, all sharing their love for new and exciting
+                            sounds. Connect with friends, follow your favorite artists, and join the conversation on our
+                            interactive platform. So grab your board and get ready to ride the waves of sound. Sign up
+                            for Sound Surfer now and discover a world of music waiting to be explored.
                         </p>
                         <div className="flex w-full justify-center items-end">
                             <div className="relative mr-4 lg:w-full xl:w-1/2 w-2/4 md:w-full text-left">
@@ -37,9 +34,7 @@ function Hero() {
                                     className="w-full bg-gray-800 rounded border bg-opacity-40 border-gray-700 focus:ring-2 focus:ring-green-900 focus:bg-transparent focus:border-green-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                 />
                             </div>
-                            <button className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
-                                Button
-                            </button>
+                            <button className="btn">Button</button>
                         </div>
                         <p className="text-sm mt-2 text-gray-500 mb-8 w-full">Neutra shabby chic ramps, viral fixie.</p>
                         <div className="flex text-gray-300">

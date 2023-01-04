@@ -13,6 +13,7 @@ export const NavBar = () => {
             <div className="flex-1">
                 <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
             </div>
+
             <div className="flex-none gap-2">
                 <div className="form-control">
                     <input type="text" placeholder="Search" className="input input-bordered" />
@@ -38,7 +39,7 @@ export const NavBar = () => {
                                 <a>Settings</a>
                             </li>
                             <li>
-                                <SignOutButton/>
+                                <SignOutButton />
                             </li>
                         </ul>
                     </div>
