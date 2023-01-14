@@ -13,7 +13,16 @@ export const NavBar = () => {
             <div className="flex-1">
                 <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
             </div>
-
+            <div className="navbar-center hidden lg:flex">
+                <ul className="menu menu-horizontal px-1">
+                    <li>
+                        <a>discover</a>
+                    </li>
+                    <li>
+                        <a>manifest</a>
+                    </li>
+                </ul>
+            </div>
             <div className="flex-none gap-2">
                 <div className="form-control">
                     <input type="text" placeholder="Search" className="input input-bordered" />

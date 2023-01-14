@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "author": {
-    "name": "TeXmeijin"
+    "name": "Sonic Surfer"
   },
   "scripts": {
     "dev": "vite",
