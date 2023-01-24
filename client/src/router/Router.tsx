@@ -46,7 +46,7 @@ const InnerRouter = () => {
                     element: <Page404Screen />,
                 },
                 {
-                    path: 'explore',
+                    path: 'explore/*',
                     element: <ExploreScreen />,
                 },
             ],

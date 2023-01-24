@@ -9,14 +9,18 @@ export const NavBar = () => {
     console.log(state.state);
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 pr-10 pl-10">
             <div className="flex-1">
-                <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <img
+                        className="w-10 object-cover object-center rounded"
+                        alt="hero"
+                        src="https://i.ibb.co/0sc1PRD/LogoMakr.png"
+                    />
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     <li>
-                        <a>discover</a>
+                        <a href='/explore'>explore</a>
                     </li>
                     <li>
                         <a>manifest</a>
