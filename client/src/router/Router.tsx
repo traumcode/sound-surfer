@@ -2,20 +2,20 @@ import { lazy, Suspense, useState } from 'react';
 import { Outlet, RouteObject, useRoutes, BrowserRouter } from 'react-router-dom';
 import { LoadingSpinner } from '~/components/LoadingSpinner';
 import { NavBar } from '~/components/NavBar';
+import Layout from '~/layout/Layout';
+
 
 const Loading = () => <LoadingSpinner />;
 
 const IndexScreen = lazy(() => import('~/screens/Index'));
 const Page404Screen = lazy(() => import('~/screens/404'));
 const SignUpScreen = lazy(() => import('~/screens/SignUp'));
+const LogInScreen = lazy(() => import('~/screens/LogIn'));
 const ExploreScreen = lazy(() => import('~/screens/Explore'));
 
-function Layout() {
+function LayoutScreen() {
     return (
-        <div>
-            <NavBar />
-            <Outlet />
-        </div>
+       <Layout/>
     );
 }
 
@@ -32,10 +32,13 @@ const InnerRouter = () => {
         {
             path: 'register',
             element: <SignUpScreen />,
+        },        {
+            path: 'login',
+            element: <LogInScreen />,
         },
         {
             path: '/',
-            element: <Layout />,
+            element: <LayoutScreen />,
             children: [
                 {
                     index: true,

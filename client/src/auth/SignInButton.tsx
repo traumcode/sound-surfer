@@ -1,7 +1,7 @@
 import { GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
 import { useAuth } from "~/lib/firebase";
 
-export const SignInButton = ({handleAction }: any) => {
+export const SignInButton = ({text, handleAction }: any) => {
 
 
   return (
@@ -10,7 +10,7 @@ export const SignInButton = ({handleAction }: any) => {
       type="button"
       className="btn btn-outline btn-secondary"
     >
-      Sign In
+      {text}
     </button>
   );
 };

@@ -12,15 +12,16 @@ export const NavBar = () => {
         <div className="navbar bg-base-100 pr-10 pl-10">
             <div className="flex-1">
                 <img
-                        className="w-10 object-cover object-center rounded"
-                        alt="hero"
-                        src="https://i.ibb.co/0sc1PRD/LogoMakr.png"
-                    />
+                    className="w-10 object-cover object-center rounded"
+                    alt="hero"
+                    src="https://i.ibb.co/MkmhGr5/sonicsurfer.png"
+                />
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     <li>
-                        <a href='/explore'>explore</a>
+                        <a href="/explore">explore</a>
+
                     </li>
                     <li>
                         <a>manifest</a>
@@ -57,7 +58,10 @@ export const NavBar = () => {
                         </ul>
                     </div>
                 ) : (
-                    <SignInButton />
+                    <>
+                        <SignInButton text="Sign Up" />
+                        <SignInButton text="Log In" />
+                    </>
                 )}
             </div>
         </div>
